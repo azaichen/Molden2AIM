@@ -3,6 +3,8 @@
 *.lo
 *.o
 *.obj
+molden2aim
+*.exe
 
 # Precompiled Headers
 *.gch

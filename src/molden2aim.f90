@@ -2063,7 +2063,7 @@ Subroutine DrvNBO(inbo,fnbo,isys,ver,dt,ititle,nbopro,  nat,iza,icore,lghst,xyz,
   implicit real(kind=8) (a-h,o-z)
   dimension         :: a(n)
 
-  write(inbo,"(2x,5e15.7e2)") (a(idx),idx=1,n)
+  write(inbo,"(2x,5e25.15e2)") (a(idx),idx=1,n)
 
   return
  end subroutine wrarray
@@ -2172,7 +2172,7 @@ Subroutine DrvNBO(inbo,fnbo,isys,ver,dt,ititle,nbopro,  nat,iza,icore,lghst,xyz,
   end do
 
   return
-  1110  format(a10,4e16.7)
+  1110  format(a10,4e25.15)
  end subroutine fwrite
 
 end Subroutine DrvNBO
